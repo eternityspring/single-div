@@ -1,0 +1,42 @@
+/* var */
+$base:#1fa67a;
+
+@mixin border-top(){
+  border-top:1px solid #dbdbdb;
+}
+/* reset */
+html,body,div,img{
+  padding:0;
+  margin:0;
+}
+/* page style */
+.container{
+  .row:first-child{
+    border-top:0;
+  }
+  .row{
+    .gird{
+      height:300px;
+      position: relative;
+    }
+  }
+}
+.row-3{
+  .gird{
+    width:33.33%;
+    float: left;
+  }
+}
+.gird>div{
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+/* square */
+.square {
+  width: 100px;
+  height: 100px;
+  background: $base;
+  margin-top:-50px;
+  margin-left:-50px;
+}
