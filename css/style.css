@@ -14,16 +14,271 @@ html, body, div, img {
 .row-3 .gird {
   width: 33.33%;
   float: left; }
+  .row-3 .gird:hover {
+    background: #f8f8f8; }
 
 .gird > div {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%; }
 
-/* square */
+/* shapes */
 .square {
+  margin-top: -50px;
+  margin-left: -50px;
   width: 100px;
   height: 100px;
-  background: #1fa67a;
+  background: #eee; }
+
+.rectangle {
   margin-top: -50px;
-  margin-left: -50px; }
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  background: #eee; }
+
+.rectangle {
+  margin-top: -50px;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  background: #eee; }
+
+.circle {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; }
+
+.oval {
+  margin-top: -50px;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  background: #eee;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px; }
+
+.triangle-up {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #eee; }
+
+.triangle-down {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #eee; }
+
+.triangle-left {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #eee;
+  border-bottom: 50px solid transparent; }
+
+.triangle-right {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #eee;
+  border-bottom: 50px solid transparent; }
+
+.triangle-top-left {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-right: 100px solid transparent; }
+
+.triangle-top-right {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-left: 100px solid transparent; }
+
+.triangle-bottom-left {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #eee;
+  border-right: 100px solid transparent; }
+
+.triangle-bottom-right {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #eee;
+  border-left: 100px solid transparent; }
+
+.triangle-up-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #eee; }
+  .triangle-up-o:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #fff; }
+
+.triangle-down-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #eee; }
+  .triangle-down-o:before {
+    content: '';
+    position: absolute;
+    top: -94px;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 80px solid #fff; }
+
+.triangle-left-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #eee;
+  border-bottom: 50px solid transparent; }
+  .triangle-left-o:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 80px solid #fff;
+    border-bottom: 40px solid transparent; }
+
+.triangle-right-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #eee;
+  border-bottom: 50px solid transparent; }
+  .triangle-right-o:before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -94px;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-left: 80px solid #fff;
+    border-bottom: 40px solid transparent; }
+
+.triangle-top-left-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-right: 100px solid transparent; }
+  .triangle-top-left-o:before {
+    content: '';
+    position: absolute;
+    top: -94px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #fff;
+    border-right: 80px solid transparent; }
+
+.triangle-top-right-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eee;
+  border-left: 100px solid transparent; }
+  .triangle-top-right-o:before {
+    content: '';
+    position: absolute;
+    top: -94px;
+    left: -86px;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #fff;
+    border-left: 80px solid transparent; }
+
+.triangle-bottom-left-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #eee;
+  border-right: 100px solid transparent; }
+  .triangle-bottom-left-o:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid #fff;
+    border-right: 80px solid transparent; }
+
+.triangle-bottom-right-o {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #eee;
+  border-left: 100px solid transparent; }
+  .triangle-bottom-right-o:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -86px;
+    width: 0;
+    height: 0;
+    border-bottom: 80px solid #fff;
+    border-left: 80px solid transparent; }
+
+@media (max-width: 900px) {
+  .row-3 .gird {
+    width: 50%; } }
+@media (max-width: 600px) {
+  .row-3 .gird {
+    width: 100%; } }
