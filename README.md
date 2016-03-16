@@ -9,6 +9,6 @@ Preview：<a href="http://htmlpreview.github.io/?https://github.com/eternityspri
 
 # 其他
 
-技术交流群：<a href="http://jq.qq.com/?_wv=1027&k=J6KYRU" target="_blank">362397329</a>
+技术交流群：<a href="http://jq.qq.com/?_wv=1027&k=J6KYRU" target="_blank">362397329</a>    289528652(已满)
 
 个人网站：<a href="http://79px.com" target="_blank">{79px}</a>

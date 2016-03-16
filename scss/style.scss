@@ -43,7 +43,7 @@ html, body, div, img {
   left: 50%;
 }
 
-/* shapes */
+/* base shapes */
 .square {
   margin-top: -50px;
   margin-left: -50px;
@@ -326,10 +326,35 @@ html, body, div, img {
   }
 }
 
-
-
-
-
-
+/* break your brain */
+.triangle-up-tree {
+  margin-top: -100px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid $gray;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid $gray;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: -5px;
+    width: 10px;
+    height:50px;
+    background: $gray;
+  }
+}
 
 @import "media";

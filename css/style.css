@@ -22,7 +22,7 @@ html, body, div, img {
   top: 50%;
   left: 50%; }
 
-/* shapes */
+/* base shapes */
 .square {
   margin-top: -50px;
   margin-left: -50px;
@@ -275,6 +275,34 @@ html, body, div, img {
     height: 0;
     border-bottom: 80px solid #fff;
     border-left: 80px solid transparent; }
+
+/* break your brain */
+.triangle-up-tree {
+  margin-top: -100px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #eee; }
+  .triangle-up-tree:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #eee; }
+  .triangle-up-tree:after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: -5px;
+    width: 10px;
+    height: 50px;
+    background: #eee; }
 
 @media (max-width: 900px) {
   .row-3 .gird {
