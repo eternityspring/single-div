@@ -12,4 +12,16 @@
       width: 100%;
     }
   }
+  h1{
+    font-size: 2em;
+  }
+}
+
+
+
+
+/* css3 animate */
+@keyframes text{
+  0%{transform:rotateX(-10deg) rotateY(-20deg);}
+  100%{transform:rotateX(10deg) rotateY(20deg);}
 }
