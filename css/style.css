@@ -22,6 +22,14 @@ html, body, div, img {
   left: 50%;
   position: relative; }
 
+.info-text {
+  top: 0 !important;
+  left: 0 !important;
+  padding: 15px;
+  text-align: center; }
+  .info-text a {
+    color: #1fa67a; }
+
 /* base shapes */
 .square {
   margin-top: -50px;
@@ -593,7 +601,7 @@ html, body, div, img {
   height: 180px;
   background-color: #ccc;
   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-  border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%; }
+  border-radius: 50% 50% 50% 50%  / 60% 60% 40% 40%; }
 
 .pacman {
   margin-top: -60px;
