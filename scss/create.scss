@@ -1,0 +1,225 @@
+.create {
+  .col-2 {
+    position: relative;
+    height: 300px;
+    &:nth-child(4n) {
+      background: #b2cc95;
+    }
+    &:nth-child(4n+1) {
+      background: #b2cc95;
+    }
+    &:nth-child(4n+2) {
+      background: #eee3b5;
+    }
+    &:nth-child(4n+3) {
+      background: #eee3b5;
+    }
+  }
+}
+
+/* create so much */
+.triangle-up-tree {
+  margin-top: -100px;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid $base;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid $base;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: -5px;
+    width: 10px;
+    height: 50px;
+    background: #795548;
+  }
+}
+
+.ba-gua {
+  margin-top: -55px;
+  margin-left: -50px;
+  width: 96px;
+  height: 48px;
+  background: #fff;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px 2px 50px 2px;
+  border-radius: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #fff;
+    border: 18px solid #000;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+    border: 18px solid #fff;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.badge-ribbon {
+  margin-top: -65px;
+  margin-left: -50px;
+  position: relative;
+  background: #8BC34A;
+  height: 100px;
+  width: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    border-bottom: 70px solid #8BC34A;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: 70px;
+    left: -10px;
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+  }
+  &:after {
+    left: auto;
+    right: -10px;
+    -webkit-transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    -o-transform: rotate(140deg);
+  }
+}
+
+.magnifying-glass {
+  margin-top: -55px;
+  margin-left: -50px;
+  font-size: 10em; /* This controls the size. */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border: 0.085em solid #607D8B;
+  position: relative;
+  border-radius: 0.35em;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.25em;
+    bottom: -0.1em;
+    border-width: 0;
+    background: #607D8B;
+    width: 0.35em;
+    height: 0.08em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+.facebook-icon {
+  margin-top: -60px;
+  margin-left: -65px;
+  background: #3B5A9B;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid #3B5A9B;
+  border-bottom: 0;
+  &:before {
+    content: "/20";
+    position: absolute;
+    background: #3B5A9B;
+    width: 40px;
+    height: 90px;
+    bottom: -30px;
+    right: -37px;
+    border: 20px solid #fff;
+    border-radius: 25px;
+  }
+  &:after {
+    content: "/20";
+    position: absolute;
+    width: 55px;
+    top: 50px;
+    height: 20px;
+    background: #fff;
+    right: 5px;
+  }
+}
+.moon {
+  margin-top: -55px;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #2196F3;
+}
+.cross {
+  margin-top: -50px;
+  margin-left: -15px;
+  background: #FF9800;
+  height: 100px;
+  position: relative;
+  width: 20px;
+  &:after {
+    background: #FF9800;
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+  }
+}
+.create-css-text{
+  margin-top: -50px;
+  margin-left: -150px;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  &:before, &:after{
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  &:before {
+    content: 'What?Not enough?';
+    top:0;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  &:after {
+    content: 'I will use css3 then,keep watching!';
+    top:70px;
+  }
+}

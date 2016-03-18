@@ -42,28 +42,20 @@ a{
     position: relative;
   }
 }
-
+.col-2{
+  width: 50%;
+  float: left;
+  > div {
+    top: 50%;
+    left: 50%;
+    position: relative;
+  }
+}
 .text-center{
   text-align: center;
 }
 .location-icon{
   margin-right:5px;
-}
-.info-text{
-  top: 0!important;
-  left: 0!important;
-  padding:15px;
-  text-align: center;
-  a{
-    color: $base;
-    text-decoration: none;
-  }
-}
-.shapes{
-  .col-3{
-    height: 300px;
-    position: relative;
-  }
 }
 .shapes-top{
   display:block;
@@ -118,69 +110,9 @@ a{
     font-size: 16px;
   }
 }
+
 /* break your brain */
-.triangle-up-tree {
-  margin-top: -100px;
-  margin-left: -50px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid $gray;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: -50px;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid $gray;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 140px;
-    left: -5px;
-    width: 10px;
-    height: 50px;
-    background: $gray;
-  }
-}
-
-.ba-gua {
-  width: 96px;
-  height: 48px;
-  background: #eee;
-  border-color: $gray;
-  border-style: solid;
-  border-width: 2px 2px 50px 2px;
-  border-radius: 100%;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background: #eee;
-    border: 18px solid $gray;
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: $gray;
-    border: 18px solid #eee;
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-  }
-}
 
 @import "shapes";
+@import "create";
 @import "media";

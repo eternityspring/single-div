@@ -1,16 +1,15 @@
 @media (max-width: 900px) {
-  .row-3 {
-    .gird {
-      width: 50%;
-    }
+  .col-3 {
+    width: 50%;
   }
 }
 
 @media (max-width: 600px) {
-  .row-3 {
-    .gird {
-      width: 100%;
-    }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
   }
   h1{
     font-size: 2em;
