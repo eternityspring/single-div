@@ -3,6 +3,6 @@ singleDiv.config(['$httpProvider','$routeProvider', function ($httpProvider,$rou
     $routeProvider
         .when('/', {templateUrl:'tpl/shapes.html'})
         .when('/create', {templateUrl:'tpl/create.html'})
-        .when('/works', {templateUrl:'tpl/works.html'})
+        .when('/impress', {templateUrl:'tpl/impress.html'})
         .otherwise({redirectTo:'/'});
 }]);
