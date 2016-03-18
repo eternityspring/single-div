@@ -28,29 +28,21 @@ a{
   .row:first-child {
     border-top: 0;
   }
-  .row {
-    .gird {
-      height: 300px;
-      position: relative;
-    }
+}
+
+.col-3 {
+  width: 33.33%;
+  float: left;
+  &:hover {
+    background: $bg;
+  }
+  > div {
+    top: 50%;
+    left: 50%;
+    position: relative;
   }
 }
 
-.row-3 {
-  .gird {
-    width: 33.33%;
-    float: left;
-    &:hover {
-      background: $bg;
-    }
-  }
-}
-
-.gird > div {
-  top: 50%;
-  left: 50%;
-  position: relative;
-}
 .text-center{
   text-align: center;
 }
@@ -65,6 +57,12 @@ a{
   a{
     color: $base;
     text-decoration: none;
+  }
+}
+.shapes{
+  .col-3{
+    height: 300px;
+    position: relative;
   }
 }
 .shapes-top{
