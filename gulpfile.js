@@ -7,7 +7,7 @@ gulp.task('scss', function () {
         .pipe(scss())
         .pipe(gulp.dest('css/'));
 });
-gulp.task('default', function () {
+gulp.task('default',['scss'], function () {
     livereload.listen();
     gulp.watch('scss/*', ['scss']).on('change', livereload.changed);
     gulp.watch('**/*').on('change', livereload.changed);

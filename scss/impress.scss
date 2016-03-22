@@ -1,0 +1,90 @@
+.impress{
+  .col-2 {
+    position: relative;
+    height: 300px;
+    &:nth-child(4n) {
+      background: rgba(97, 188, 249, 0.35);
+    }
+    &:nth-child(4n+1) {
+      background: rgba(97, 188, 249, 0.35);
+    }
+    &:nth-child(4n+2) {
+      background: rgba(214, 219, 194, 0.36);
+    }
+    &:nth-child(4n+3) {
+      background: rgba(214, 219, 194, 0.36);
+    }
+  }
+}
+
+
+
+.loader {
+  $color-1: #00a7ce;
+  $color-2: #72c45a;
+  $color-3: #f963a3;
+  $color-4: #f78221;
+  $ball-size: 20px;
+  $jump: .75em;
+  $diam: 2 * $jump;
+  $duration: 1.2s;
+
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  animation: anim-rotate $duration infinite ease;
+  /* Variations */
+  //animation: anim-rotate $duration infinite linear;
+  //animation: anim-rotate $duration infinite cubic-bezier(.1,.3,.3,.1);
+  //animation: anim-rotate $duration linear infinite alternate;
+  //animation: anim-rotate 0 infinite;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: $ball-size;
+    height: $ball-size;
+    top: 50%;
+    left: 50%;
+    margin-top: -$ball-size/2;
+    margin-left: -$ball-size/2;
+    border-radius: $ball-size/2;
+    opacity: .9;
+  }
+  &::before {
+    background: $color-1;
+    transform: translate(-$jump, -$jump)
+    scale(1);
+    box-shadow: $diam $diam 0 $color-2;
+    animation: anim-1-2 $duration infinite ease;
+  }
+  &:after {
+    background: $color-3;
+    transform: translate($jump, -$jump)
+    scale(1);
+    box-shadow: -$diam $diam 0 $color-4;
+    animation: anim-3-4 $duration infinite ease;
+  }
+  @keyframes anim-1-2 {
+    50% {
+      transform: scale(1.3) translate(0, 0);
+      box-shadow: 0 0 0 $color-2;
+      opacity: .8;
+    }
+  }
+
+  @keyframes anim-3-4 {
+    50% {
+      transform: scale(1.3) translate(0, 0);
+      box-shadow: 0 0 0 $color-4;
+      opacity: .8;
+    }
+  }
+
+  @keyframes anim-rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(720deg); }
+  }
+
+}

@@ -1156,6 +1156,62 @@ a {
     content: 'I will use css3 animate then,keep watching!';
     top: 70px; }
 
+.impress .col-2 {
+  position: relative;
+  height: 300px; }
+  .impress .col-2:nth-child(4n) {
+    background: rgba(97, 188, 249, 0.35); }
+  .impress .col-2:nth-child(4n+1) {
+    background: rgba(97, 188, 249, 0.35); }
+  .impress .col-2:nth-child(4n+2) {
+    background: rgba(214, 219, 194, 0.36); }
+  .impress .col-2:nth-child(4n+3) {
+    background: rgba(214, 219, 194, 0.36); }
+
+.loader {
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  animation: anim-rotate 1.2s infinite ease;
+  /* Variations */ }
+  .loader:before, .loader:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 10px;
+    opacity: .9; }
+  .loader::before {
+    background: #00a7ce;
+    transform: translate(-0.75em, -0.75em) scale(1);
+    box-shadow: 1.5em 1.5em 0 #72c45a;
+    animation: anim-1-2 1.2s infinite ease; }
+  .loader:after {
+    background: #f963a3;
+    transform: translate(0.75em, -0.75em) scale(1);
+    box-shadow: -1.5em 1.5em 0 #f78221;
+    animation: anim-3-4 1.2s infinite ease; }
+@keyframes anim-1-2 {
+  50% {
+    transform: scale(1.3) translate(0, 0);
+    box-shadow: 0 0 0 #72c45a;
+    opacity: .8; } }
+@keyframes anim-3-4 {
+  50% {
+    transform: scale(1.3) translate(0, 0);
+    box-shadow: 0 0 0 #f78221;
+    opacity: .8; } }
+@keyframes anim-rotate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(720deg); } }
 @media (max-width: 900px) {
   .col-3 {
     width: 50%; } }
