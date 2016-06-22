@@ -1,46 +1,7 @@
-<section class="container create">
+<section class="container-fluid create">
     <div class="row">
-        <div class="col-2">
-            <div class="triangle-up-tree"></div>
-        </div>
-        <div class="col-2">
-            <div class="ba-gua"></div>
-        </div>
-        <div class="col-2">
-            <div class="badge-ribbon"></div>
-        </div>
-        <div class="col-2">
-            <div class="magnifying-glass"></div>
-        </div>
-        <div class="col-2">
-            <div class="facebook-icon"></div>
-        </div>
-        <div class="col-2">
-            <div class="moon"></div>
-        </div>
-        <div class="col-2">
-            <div class="cross"></div>
-        </div>
-        <div class="col-2">
-            <div class="create-computer"></div>
-        </div>
-        <div class="col-2">
-            <div class="burger"></div>
-        </div>
-        <div class="col-2">
-            <div class="tag-green"></div>
-        </div>
-        <div class="col-2">
-            <div class="slack-icon"></div>
-        </div>
-        <div class="col-2">
-            <div class="man"></div>
-        </div>
-        <div class="col-2">
-            <div class="chrome"></div>
-        </div>
-        <div class="col-2">
-            <div class="loader"></div>
+        <div ng-repeat="s in creates" class="create-item list-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="{{s}}"></div>
         </div>
     </div>
 </section>

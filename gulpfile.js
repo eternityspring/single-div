@@ -3,7 +3,7 @@ var scss = require('gulp-scss');
 var livereload = require('gulp-livereload');
 
 gulp.task('scss', function () {
-    gulp.src('scss/style.scss')
+    return gulp.src('scss/style.scss')
         .pipe(scss())
         .pipe(gulp.dest('css/'));
 });

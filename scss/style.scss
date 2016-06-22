@@ -13,10 +13,11 @@ $bg: #f8f8f8;
 html, body, div, img,header,section,ul,ol,li {
   padding: 0;
   margin: 0;
+  font-family:'microsolf yahei';
 }
 h1 {
   font-size:4em;
-  font-family:"Raleway";
+  font-family:'microsolf yahei';
   font-weight:200;
   animation:text 4s infinite alternate ease-in-out;
 }
@@ -30,21 +31,8 @@ a{
   }
 }
 
-.col-3 {
-  width: 33.33%;
-  float: left;
-  &:hover {
-    background: $bg;
-  }
-  > div {
-    top: 50%;
-    left: 50%;
-    position: relative;
-  }
-}
-.col-2{
-  width: 50%;
-  float: left;
+.list-item {
+  box-sizing: border-box;
   > div {
     top: 50%;
     left: 50%;
@@ -110,8 +98,13 @@ a{
     font-size: 16px;
   }
 }
-
+.test{
+  height:100%;
+}
 /* break your brain */
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/grid";
 
 @import "shapes";
 @import "create";
