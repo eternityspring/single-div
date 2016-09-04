@@ -17,4 +17,5 @@ QQ群：<a href="http://jq.qq.com/?_wv=1027&k=J6KYRU" target="_blank">362397329<
 
 my project：<a href="http://79px.com" target="_blank">{79px}</a>
 
-
+## License
+CC BY 4.0  [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
