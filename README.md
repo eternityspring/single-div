@@ -1,4 +1,4 @@
-# Single Div
+## Single Div
 Single div can do more than you think!
 
 This project want to help someone who want to learn css!
@@ -11,7 +11,7 @@ preview:<a href="http://docs.79px.com/single-div/" target="_blank">click here</a
 
 preview:<a href="http://docs.79px.com/single-div/#/create" target="_blank">click here</a>
 
-# Others
+## Others
 
 QQ群：<a href="http://jq.qq.com/?_wv=1027&k=J6KYRU" target="_blank">362397329</a>    <del>289528652</del>
 
