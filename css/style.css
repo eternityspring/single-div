@@ -2128,18 +2128,17 @@ a {
 .front .link-box-shadow {
   background: #FF5722; }
 
-.boxShadow {
-  background: #eee; }
-
 .box {
   width: 70%;
   height: 200px;
-  background: #FFF;
+  background: url("../images/vintage-concrete.png") top center repeat;
   margin: 40px auto; }
   .box h3 {
     text-align: center;
     position: relative;
-    top: 80px; }
+    top: 64px;
+    color: #795548;
+    font-size: 50px; }
 
 .effect1 {
   box-shadow: 0 10px 6px -6px #777; }
