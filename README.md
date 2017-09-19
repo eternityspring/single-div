@@ -5,11 +5,15 @@ This project want to help someone who want to learn css!
 
 ### Base shares
 
-preview:<a href="http://docs.79px.com/single-div/" target="_blank">click here</a>
+preview:<a href="https://eternityspring.github.io/single-div/#/shapes" target="_blank">click here</a>
 
 ### Works
 
-preview:<a href="http://docs.79px.com/single-div/#/create" target="_blank">click here</a>
+preview:<a href="https://eternityspring.github.io/single-div/#/create" target="_blank">click here</a>
+
+### Box-shadow
+
+preview:<a href="https://eternityspring.github.io/single-div/#/box-shadow" target="_blank">click here</a>
 
 ## Others
 
