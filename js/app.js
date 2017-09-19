@@ -1,13 +1,19 @@
 var singleDiv = angular.module('singleDiv',['ngRoute']);
 singleDiv.config(['$httpProvider','$routeProvider', function ($httpProvider,$routeProvider) {
     $routeProvider
-        .when('/', {templateUrl:'tpl/shapes.html',controller:'shapeCtrl'})
+        .when('/', {templateUrl:'tpl/front.html',controller:'indexCtrl'})
+        .when('/shapes', {templateUrl:'tpl/shapes.html',controller:'shapeCtrl'})
         .when('/create', {templateUrl:'tpl/create.html',controller:'createCtrl'})
+        .when('/box-shadow', {templateUrl:'tpl/box-shadow.html'})
         .when('/impress', {templateUrl:'tpl/impress.html',controller:'impressCtrl'})
         .otherwise({redirectTo:'/'});
 }]);
 
-singleDiv.controller('shapeCtrl',['$scope','$anchorScroll',function ($scope,$anchorScroll) {
+singleDiv.controller('indexCtrl',['$scope',function ($scope) {
+
+}]).
+
+controller('shapeCtrl',['$scope','$anchorScroll',function ($scope,$anchorScroll) {
     $anchorScroll(0);
     $scope.shapes = [
       'line',
