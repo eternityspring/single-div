@@ -18,6 +18,9 @@ html, body, div, img,header,section,ul,ol,li {
   padding: 0;
   margin: 0;
 }
+body{
+  min-height: 100vh;
+}
 h1 {
   font-size:4em;
   font-weight:200;
@@ -50,18 +53,20 @@ a{
 .shapes-top{
   display:block;
   height:320px;
-  background: $base url("../images/crissxcross.png");
+  background: $base url("../assets/img/crissxcross.png");
   overflow: hidden;
   color:$white;
   padding: 15px;
   box-sizing: border-box;
 }
 .useful-links {
-  padding: 8px 0;
-  text-align: center;
+  height: 45px;
   background-color: #f5f5f5;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ul{
     list-style:none;
     li{
@@ -82,7 +87,7 @@ a{
   display:block;
   height:220px;
   width:100%;
-  background: $base url("../images/crissxcross.png");
+  background: $base url("../assets/img/crissxcross.png");
   overflow: hidden;
   color: $white;
   .btn{
@@ -116,7 +121,7 @@ a{
 // 首页
 .front{
   .col-sm-4{
-    height: 33.3vw;
+    height: calc(100vh - 365px);
     font-size: 24px;
     display:table;
     a{
@@ -146,7 +151,7 @@ a{
 .box {
   width: 70%;
   height: 200px;
-  background: url("../images/vintage-concrete.png") top center repeat;
+  background: url("../assets/img/vintage-concrete.png") top center repeat;
   margin: 40px auto;
   h3 {
     text-align: center;
@@ -276,8 +281,6 @@ a{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     top: 50%;
     bottom: 0;
-    left: 10px;
-    right: 10px;
     border-radius: 100px / 10px;
     right: 10px;
     left: auto;
@@ -306,7 +309,6 @@ a{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     top: 0;
     bottom: 0;
-    left: 10px;
     right: 10px;
     border-radius: 100px / 10px;
     right: 10px;
@@ -336,8 +338,6 @@ a{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     top: 10px;
     bottom: 10px;
-    left: 0;
-    right: 0;
     border-radius: 100px / 10px;
     right: 10px;
     left: auto;
